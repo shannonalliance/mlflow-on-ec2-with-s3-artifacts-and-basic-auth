@@ -303,7 +303,7 @@ terraform apply -target=module.ec2_instance -auto-approve
 
 This can be useful if you want to make some changes to the EC2 instance.
 
-Alternatively stop the instance temporarilywith the `aws` cli:
+Alternatively stop the instance temporarily with the `aws` cli:
 
 ```
 aws ec2 stop-instances --instance-ids instance_id
