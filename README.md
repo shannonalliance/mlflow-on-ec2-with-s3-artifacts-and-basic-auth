@@ -291,7 +291,7 @@ With the virtual environment active and the scripts modified you can start runni
 
 ### Temporarily removing the EC2 intsance
 
-Use the `destroy`
+Use the `destroy` command with the `-target` option to just take down the `ec2` instance.
 ```
 terraform destroy -target=module.ec2_instance -auto-approve
 ```
