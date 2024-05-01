@@ -251,7 +251,7 @@ terraform apply -target=module.load_balancer -auto-approve
 
 ## Working with the Python API
 
-Now that our server is up and running (assuming the above steps excuted succesfully) we will want to start adding users and modifying permissions.
+Now that our server is up and running (assuming the above steps executed successfully) we will want to start adding users and modifying permissions.
 
 I have included some sample `python` scripts for carrying out basic tasks like creating and deleting users and updating passwords.
 
