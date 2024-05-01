@@ -154,6 +154,10 @@ terraform apply -target=module.ec2_instance -auto-approve
 
 ### mlflow_server
 
+Before proceeding with this step, you will need to install ansible on your machine.
+
+An alternative would be to `ssh` in to your running instance and run the instructions listed in the `terraform/mlflow/ansible/start_mlflow_server.yml` file manually.
+
 In the code editor of your choice, lets make the following changes within the mlflow_server module:
 
 - In the ansible folder, create a `hosts.ini` file.
