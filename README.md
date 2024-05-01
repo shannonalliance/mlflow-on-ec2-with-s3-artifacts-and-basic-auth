@@ -60,7 +60,7 @@ terraform apply -auto-approve
 - In the `terraform/mlflow` directory, create a `backend.tf` file.
 - Copy and paste the `backend.tf.template` file contents from the `terraform/mlflow` directory into the `backend.tf` file.
 - Replace the placeholder values with your values, from the .env file.
-    - The key difference between the two backend files is the key field.
+    - The main difference between the two backend files is the key field.
     - It is crucial that you use the correct key for each backend or there will be state issues.
 
 ### Init terraform project
