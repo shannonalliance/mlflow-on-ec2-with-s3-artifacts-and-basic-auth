@@ -43,7 +43,7 @@ terraform apply -auto-approve
 ### Setup remote backend
 
 - In the `terraform/bootstrap` directory, create a `backend.tf` file.
-- Copy and paste the `backend.tf.template` file contents from the `terraform/bootstrap` directory ` into the `backend.tf` file.
+- Copy and paste the `backend.tf.template` file contents from the `terraform/bootstrap` directory into the `backend.tf` file.
 - Replace the placeholder values with your values, from the .env file
     - These cannot be passed as variables, so we must add the values here.
 - Re-init the project and re-apply:
