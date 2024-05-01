@@ -1,0 +1,8 @@
+resource "aws_acm_certificate" "mlflow_acm_cert" {
+    domain_name = "<your.domain.or.subdomain.here>"
+    validation_method = "DNS"
+
+    lifecycle {
+        create_before_destroy = true
+    }
+}

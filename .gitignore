@@ -1,0 +1,11 @@
+.local
+**/.terraform*
+*.tfstate
+*.tfstate.*
+hosts.ini
+backend.tf
+start_mlflow_server.yml
+acm_certificate.tf
+route53_records.tf
+.env
+.DS_Store
