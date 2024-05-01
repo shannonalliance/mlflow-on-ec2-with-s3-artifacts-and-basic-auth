@@ -325,4 +325,4 @@ To pernamently remove all resources, simply run the `destroy` command without th
 terraform destroy
 ```
 
-This cannot be undone, and you will need to re-configure the ip adddress in the `terraform/mlflow/mlflow_server/hosts.ini` when redeploying.
+This cannot be undone, and you will need to re-configure the ip address in the `terraform/mlflow/mlflow_server/hosts.ini` when redeploying.
