@@ -6,7 +6,7 @@ This repository will help users launch an MLFlow Server for Collaborative ML Man
 
 - In the repository root directory, create a `.env` file.
 - Copy and paste the `.env.template` file contents into the `.env` file.
-- Replace the placeholder values with the valuse you want to use.
+- Replace the placeholder values with the values you want to use.
 - Export the environment variables.
     - Either `source` this file, or copy and paste the content in the temrinal.
 
