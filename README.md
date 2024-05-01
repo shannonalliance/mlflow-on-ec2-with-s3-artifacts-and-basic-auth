@@ -8,7 +8,7 @@ This repository will help users launch an MLFlow Server for Collaborative ML Man
 - Copy and paste the `.env.template` file contents into the `.env` file.
 - Replace the placeholder values with the values you want to use.
 - Export the environment variables.
-    - Either `source` this file, or copy and paste the content in the temrinal.
+    - Either `source` this file, or copy and paste the content in the terminal.
 
 ## Bootstrapping terraform state tracking
 
