@@ -4,6 +4,6 @@ resource "aws_iam_instance_profile" "mlflow_instance_profile_for_artifacts_bucke
     
     tags = {
         Name = "mlflow_instance_profile_for_artifacts_bucket_access"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

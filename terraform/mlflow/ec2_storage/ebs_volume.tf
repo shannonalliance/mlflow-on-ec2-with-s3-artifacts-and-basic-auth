@@ -4,6 +4,6 @@ resource "aws_ebs_volume" "mlflow_ec2_persistent_ebs_volume" {
     type              = "gp2"
     tags = {
         Name = "mlflow_ec2_persistent_ebs_volume"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

@@ -3,6 +3,6 @@ resource "aws_eip" "mlflow_ec2_eip" {
     
     tags = {
         Name = "mlflow_ec2_eip"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

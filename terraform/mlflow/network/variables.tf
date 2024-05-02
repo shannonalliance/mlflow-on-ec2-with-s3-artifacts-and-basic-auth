@@ -12,3 +12,7 @@ variable "mlflow_load_balancer_subnet_az" {
     description = "The availability zone to use for mlflow_load_balancer_subnet, required for the application load balancer."
     type = string
 }
+
+variable "cost_purpose_tag_value"{
+    description = "Value to be assigned to the 'Purpose' tag across resources for cost monitoring purposes."
+}

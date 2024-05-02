@@ -3,6 +3,6 @@ resource "aws_vpc" "mlflow_vpc" {
     
     tags = {
         Name = "mlflow_vpc"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

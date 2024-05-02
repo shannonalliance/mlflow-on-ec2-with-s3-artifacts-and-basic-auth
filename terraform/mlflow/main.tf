@@ -4,18 +4,21 @@ module "network" {
     aws_region = var.aws_region
     mlflow_ec2_subnet_az = var.mlflow_ec2_subnet_az
     mlflow_load_balancer_subnet_az = var.mlflow_load_balancer_subnet_az
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }
 
 module "s3_bucket" {
     source = "./s3_bucket"
 
     mlflow_artifacts_bucket_name = var.mlflow_artifacts_bucket_name
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }
 
 module "iam" {
     source = "./iam"
 
     mlflow_artifacts_bucket_name = var.mlflow_artifacts_bucket_name
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }
 
 module "ec2_storage" {
@@ -23,6 +26,7 @@ module "ec2_storage" {
 
     mlflow_ec2_subnet_az = var.mlflow_ec2_subnet_az
     mlflow_ec2_persistent_ebs_volume_size = var.mlflow_ec2_persistent_ebs_volume_size
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }
 
 module "ec2_instance" {
@@ -36,6 +40,7 @@ module "ec2_instance" {
     mlflow_instance_profile_for_artifacts_bucket_access_name = module.iam.mlflow_instance_profile_for_artifacts_bucket_access_name
     mlflow_ec2_eip_id = module.network.mlflow_ec2_eip_id
     public_key_path = var.public_key_path
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }
 
 module "mlflow_server" {
@@ -54,4 +59,5 @@ module "load_balancer" {
     mlflow_load_balancer_subnet_id = module.network.mlflow_load_balancer_subnet_id
     mlflow_vpc_id = module.network.mlflow_vpc_id
     mlflow_instance_id = module.ec2_instance.mlflow_instance_id
+    cost_purpose_tag_value = var.cost_purpose_tag_value
 }

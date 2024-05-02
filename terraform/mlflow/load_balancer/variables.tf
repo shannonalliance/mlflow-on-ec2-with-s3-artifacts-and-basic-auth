@@ -27,3 +27,7 @@ variable "mlflow_vpc_id" {
 variable "mlflow_instance_id" {
     
 }
+
+variable "cost_purpose_tag_value"{
+    description = "Value to be assigned to the 'Purpose' tag across resources for cost monitoring purposes."
+}

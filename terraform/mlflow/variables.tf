@@ -51,3 +51,7 @@ variable "mlflow_ec2_persistent_ebs_volume_size" {
     description = "The amount of storage in GiB to allocated the externally mounted EBS volume."
     type = string
 }
+
+variable "cost_purpose_tag_value"{
+    description = "Value to be assigned to the 'Purpose' tag across resources for cost monitoring purposes."
+}

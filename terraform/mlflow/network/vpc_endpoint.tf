@@ -20,6 +20,6 @@ POLICY
     
     tags = {
         Name = "mlflow_vpc_endpoint"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

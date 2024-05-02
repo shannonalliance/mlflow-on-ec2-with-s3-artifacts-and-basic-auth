@@ -7,6 +7,6 @@ resource "aws_lb" "mlflow_load_balancer" {
     
     tags = {
         Name = "mlflow_load_balancer"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

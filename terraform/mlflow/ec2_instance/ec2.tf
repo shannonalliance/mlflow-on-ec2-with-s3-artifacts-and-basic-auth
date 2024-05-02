@@ -26,7 +26,7 @@ resource "aws_instance" "mlflow_instance" {
 
     tags = {
         Name = "mlflow_instance"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
     
     lifecycle {

@@ -3,6 +3,6 @@ resource "aws_internet_gateway" "mlflow_internet_gateway" {
     
     tags = {
         Name = "mlflow_internet_gateway"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

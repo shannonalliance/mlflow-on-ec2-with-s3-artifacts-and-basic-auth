@@ -42,6 +42,6 @@ resource "aws_default_security_group" "mlflow_default_security_group" {
     
     tags = {
         Name = "mlflow_default_security_group"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

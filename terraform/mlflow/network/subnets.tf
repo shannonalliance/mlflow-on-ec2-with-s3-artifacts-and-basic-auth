@@ -16,6 +16,6 @@ resource "aws_subnet" "mlflow_load_balancer_subnet" {
 
     tags = {
         Name = "mlflow_load_balancer_subnet"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

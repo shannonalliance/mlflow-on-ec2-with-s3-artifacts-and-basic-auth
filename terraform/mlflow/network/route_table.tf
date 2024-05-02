@@ -8,6 +8,6 @@ resource "aws_default_route_table" "mlflow_default_route_table" {
     
     tags = {
         Name = "mlflow_default_route_table"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

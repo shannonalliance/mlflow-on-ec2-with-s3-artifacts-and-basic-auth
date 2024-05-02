@@ -5,6 +5,6 @@ resource "aws_kms_key" "mlflow_artifacts_bucket_kms_key" {
 
     tags = {
         Name = "mlflow_artifacts_bucket_kms_key"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

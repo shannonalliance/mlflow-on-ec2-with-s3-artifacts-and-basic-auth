@@ -17,6 +17,6 @@ resource "aws_iam_role" "mlflow_iam_role_for_artifacts_bucket_access" {
     
     tags = {
         Name = "mlflow_iam_role_for_artifacts_bucket_access"
-        Purpose = "mlfow_for_teams_demo"
+        CostPurpose = var.cost_purpose_tag_value
     }
 }

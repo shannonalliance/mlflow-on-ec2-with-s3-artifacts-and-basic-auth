@@ -33,3 +33,7 @@ variable "public_key_path" {
     description = "The path to the public key for ssh-ing in to the EC2 instance."
     type = string
 }
+
+variable "cost_purpose_tag_value"{
+    description = "Value to be assigned to the 'Purpose' tag across resources for cost monitoring purposes."
+}
