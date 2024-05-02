@@ -53,5 +53,5 @@ variable "mlflow_ec2_persistent_ebs_volume_size" {
 }
 
 variable "cost_purpose_tag_value"{
-    description = "Value to be assigned to the 'Purpose' tag across resources for cost monitoring purposes."
+    description = "Value to be assigned to the 'CostPurpose' tag across resources."
 }
