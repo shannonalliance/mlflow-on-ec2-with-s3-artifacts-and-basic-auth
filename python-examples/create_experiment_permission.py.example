@@ -1,0 +1,10 @@
+import os
+from mlflow.server.auth.client import AuthServiceClient
+
+client = AuthServiceClient(os.getenv('MLFLOW_TRACKING_URI'))
+
+ep = client.create_experiment_permission("myexperiment", "newuser", "READ")
+
+print(f"experiment_id: {ep.experiment_id}")
+print(f"user_id: {ep.user_id}")
+print(f"permission: {ep.permission}")
