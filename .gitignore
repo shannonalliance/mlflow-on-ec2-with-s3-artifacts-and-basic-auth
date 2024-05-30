@@ -9,3 +9,6 @@ acm_certificate.tf
 route53_records.tf
 .env
 .DS_Store
+*.py
+.idea
+.venv
